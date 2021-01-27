@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="score_board">Score Board</string>
+    <string name="reset_btn">Reset</string>
+</resources>
