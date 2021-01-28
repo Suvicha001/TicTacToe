@@ -140,12 +140,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
 
-        for (i in 0 until lenGrid) {
-            for (j in 0 until lenGrid) {
-                if(fields[i][0] != fields[j][i] || fields[i][0] == ""){
+        for (j in 0 until lenGrid) {
+
+            for (i in 0 until lenGrid) {
+                if(fields[0][j] != fields[i][j] || fields[0][j] == ""){
                     break
                 }
-                if(j == lenGrid-1)
+                if(i == lenGrid-1)
                     return true
             }
         }
