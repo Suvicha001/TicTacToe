@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         for (i in 0 until lenGrid) {
             if(fields[0][0] != fields[i][i] || fields[0][0] == ""){
-                return false
+                break
             }
             if(i == lenGrid-1)
                 return true
@@ -161,8 +161,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         var j: Int = lenGrid-1
         for (i in 0 until lenGrid) {
-            if(fields[0][4] != fields[i][j] || fields[0][4] == ""){
-                return false
+            if(fields[0][lenGrid-1] != fields[i][j] || fields[0][lenGrid-1] == ""){
+                break
             }
             if(i == lenGrid-1)
                 return true
